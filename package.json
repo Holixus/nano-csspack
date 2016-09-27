@@ -1,6 +1,6 @@
 {
   "name": "nano-csspack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast and simple but powerful enough CSS packer",
   "main": "csspack.js",
   "scripts": {
