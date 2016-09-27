@@ -15,6 +15,7 @@ var pairs = [
 	[' * { padding: 1px 2px 3px; } ', '*{padding:1px 2px 3px}' ],
 	[' * { padding: 1px 2px; } ', '*{padding:1px 2px}' ],
 	[' * { padding: 1px 1px; } ', '*{padding:1px}' ],
+	['i { margin: 0px; }', 'i{margin:0}' ],
 	['p{color: #000000; color: #111111; color: #222222; color: #333333;}', 'p{color:#000;color:#111;color:#222;color:#333}' ],
 	['p{color: #aaaaaa; color: #ffffff; color: #0099AA; color: #FFAA55;}', 'p{color:#aaa;color:#fff;color:#09A;color:#FA5}' ],
 	[' * { color: rgba( 17, 17, 17, 1); } ', '*{color:#111}' ],
