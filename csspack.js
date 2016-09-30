@@ -13,7 +13,7 @@ module.exports = function css_pack(css) {
 		.replace(/([{;])\s*([\w-]+)\s*:\s+/g, '$1$2:')
 		.replace(/,\s+/g, ',')
 		.replace(/url\((['"])(.*?)\1\)/g, 'url($2)') //'
-		.replace(/([^\d]0)(rem|em|ex|px|vw|vh|vmin|vmax|cm|mm|in|pt|pc|deg|rad|grad|ms|s|hz|khz)/g, '$1')
+		.replace(/([^\d.]0)(rem|em|ex|px|vw|vh|vmin|vmax|cm|mm|in|pt|pc|deg|rad|grad|ms|s|hz|khz)/g, '$1')
 		.replace(/rgba\s*\(\s*([0-9]+)\s*,\s*([0-9]+)\s*,\s*([0-9]+)\s*,\s*([0-9\.]+)\s*\)/g, function (m, r,g,b,a) {
 			return a*1 === 1 ? '#' + hex_channel(r) + hex_channel(g) + hex_channel(b) : 'rgba('+r+','+g+','+b+','+a+')';
 		})
